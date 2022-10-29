@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="guru"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-28 09:38:26 AM"/>
+        <attribute name="created" value="Z3VydTtUUFMxRS1MQVAtNDA7MjAyMi0xMC0yODswOToyNDo1NiBBTTsyNDk5"/>
+        <attribute name="edited" value="Z3VydTtUUFMxRS1MQVAtNDA7MjAyMi0xMC0yODswOTozODoyNiBBTTsxOzI2MDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="rollno" type="Integer" array="False" size=""/>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="address" type="String" array="False" size=""/>
+            <declare name="bloodgroup" type="String" array="False" size=""/>
+            <declare name="phonenumber" type="Integer" array="False" size=""/>
+            <declare name="DepartmentAssigned" type="String" array="False" size=""/>
+            <output expression="&quot;WHAT'S YOUR ROLLNO :&quot;" newline="True"/>
+            <input variable="rollno"/>
+            <output expression="&quot;YOUR GOOD NAME ?: &quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;WHERE DO YOU RESIDE:&quot;" newline="True"/>
+            <input variable="address"/>
+            <output expression="&quot;WHICH BLOOD GROUP DO U BELONG:&quot;" newline="True"/>
+            <input variable="bloodgroup"/>
+            <output expression="&quot;WHAT'S YOUR PHONE NUMBER? :&quot;" newline="True"/>
+            <input variable="phonenumber"/>
+            <output expression="&quot;WHICH DEPARTMENT DO YOU BELONG? :&quot;" newline="True"/>
+            <input variable="DepartmentAssigned"/>
+            <output expression="&quot;THANK YOU BUDDY: &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
