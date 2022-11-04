@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22062"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:43:21 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA2MjsyMDIyMjNNQVlDMDA5OTsyMDIyLTExLTA0OzA5OjQyOjQ0IEFNOzMwNzE="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA2MjsyMDIyMjNNQVlDMDA5OTsyMDIyLTExLTA0OzExOjQzOjIxIEFNOzY7MzE3Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="TO SOLVE FOR THE VALUES OF X IN A QUADRATIC EQUATION  OF DEGREE 2"/>
+            <declare name="B" type="Integer" array="False" size=""/>
+            <declare name="A" type="Integer" array="False" size=""/>
+            <declare name="C" type="Integer" array="False" size=""/>
+            <declare name="X1" type="Integer" array="False" size=""/>
+            <declare name="X2" type="Integer" array="False" size=""/>
+            <output expression="&quot;WHAT IS THE VALUE OF B? :&quot;" newline="True"/>
+            <comment text="ENTER THE VALUE OF COEFFICIENT OF X"/>
+            <input variable="B"/>
+            <output expression="&quot;WHAT IS THE VALUE OF A:?&quot;" newline="True"/>
+            <comment text="ENTER THE COEFFCIENT OF X^2"/>
+            <input variable="A"/>
+            <output expression="&quot;WHAT IS THE VALUE OF C?:&quot;" newline="True"/>
+            <comment text="ENTER THE VALUE OF CONSTANT"/>
+            <input variable="C"/>
+            <assign variable="X1" expression="(-B+Sqrt(B*B-4*A*C))/2*A"/>
+            <assign variable="X2" expression="(-B-Sqrt(B*B-4*A*C))/2*A"/>
+            <output expression="&quot;VALUE OF X1 IS :&quot; &amp;X1" newline="True"/>
+            <output expression="&quot;VALUE OF X2 IS :&quot; &amp;X2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

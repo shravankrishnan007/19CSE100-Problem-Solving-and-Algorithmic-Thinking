@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22062"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:50:14 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA2MjsyMDIyMjNNQVlDMDA5OTsyMDIyLTExLTA0OzEwOjAxOjUyIEFNOzMwNTc="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA2MjsyMDIyMjNNQVlDMDA5OTsyMDIyLTExLTA0OzEwOjUwOjE0IEFNOzc7MzE3Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="SWAP THE TWO NUMBER WITHOUT USING THIRD VARIABLE"/>
+            <declare name="A" type="Integer" array="False" size=""/>
+            <declare name="B" type="Integer" array="False" size=""/>
+            <output expression="&quot;WHAT IS THE VALUE OF A?:&quot;" newline="True"/>
+            <input variable="A"/>
+            <output expression="&quot;WHAT IS THE VALUE OF B?:&quot;" newline="True"/>
+            <input variable="B"/>
+            <assign variable="B" expression="A*B"/>
+            <assign variable="A" expression="B/A"/>
+            <assign variable="B" expression="B/A"/>
+            <output expression="&quot;THE NEW VALUE OF A IS:&quot; &amp;A" newline="True"/>
+            <output expression="&quot;THE NEW VALUE OF B IS:&quot; &amp;B" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

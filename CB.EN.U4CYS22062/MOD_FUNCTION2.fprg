@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22062"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:50:53 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA2MjsyMDIyMjNNQVlDMDA5OTsyMDIyLTExLTA0OzEwOjI4OjA5IEFNOzMwNjg="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA2MjsyMDIyMjNNQVlDMDA5OTsyMDIyLTExLTA0OzEwOjUwOjUzIEFNOzY7MzE3NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="TO FIND THE REMAINDER WHEN DIVIDING TWO NUMBERS"/>
+            <declare name="DIV" type="Integer" array="False" size=""/>
+            <declare name="DIVISOR" type="Integer" array="False" size=""/>
+            <declare name="Q" type="Integer" array="False" size=""/>
+            <declare name="R" type="Integer" array="False" size=""/>
+            <output expression="&quot;ENTER THE NUMBER YOU WANT TO DIVIDE:&quot;" newline="True"/>
+            <input variable="DIV"/>
+            <output expression="&quot;ENTER THE NUMBER WHICH YOU WANT TO DIVIDE WITH:&quot;" newline="True"/>
+            <input variable="DIVISOR"/>
+            <assign variable="Q" expression="DIV/DIVISOR"/>
+            <assign variable="R" expression="DIV-DIVISOR*Q"/>
+            <output expression="&quot;THE REMAINDER IS :&quot; &amp;R" newline="True"/>
+            <output expression="&quot;THE QUOTIENT IS:&quot; &amp;Q" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

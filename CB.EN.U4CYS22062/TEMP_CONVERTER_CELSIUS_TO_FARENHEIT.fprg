@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22062"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 09:23:04 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA2MjsyMDIyMjNNQVlDMDA5OTsyMDIyLTExLTA0OzA5OjE1OjQxIEFNOzMwNjg="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA2MjsyMDIyMjNNQVlDMDA5OTsyMDIyLTExLTA0OzA5OjIzOjA0IEFNOzE7MzE3NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;WELCOME TO TEMPERATURE CONVERTER:&quot;" newline="True"/>
+            <declare name="FARENHEIT" type="Real" array="False" size=""/>
+            <declare name="CELSIUS" type="Real" array="False" size=""/>
+            <output expression="&quot;HOW MUCH CELSIUS?:&quot;" newline="True"/>
+            <input variable="CELSIUS"/>
+            <assign variable="FARENHEIT" expression="1.8*CELSIUS+32"/>
+            <output expression="&quot;TEMPERATURE IN FARENHEIT IS:&quot; &amp;FARENHEIT" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
