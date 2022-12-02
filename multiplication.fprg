@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22062"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:09:33 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA2MjsyMDIyMjNNQVlDMDA5OTsyMDIyLTEyLTAyOzA5OjMwOjU0IEFNOzMwNjg="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA2MjsyMDIyMjNNQVlDMDA5OTsyMDIyLTEyLTAyOzEwOjA5OjMzIEFNOzU7MzE3NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="multiplication table upto 10"/>
+            <declare name="n, c" type="Integer" array="False" size=""/>
+            <for variable="n" start="1" end="10" direction="inc" step="1">
+                <comment text="when n takes all the values from 1 to 10 and product is displayed similarly every value upto 10"/>
+                <output expression="&quot;the multiplication table of&quot;&amp;n&amp;&quot;is&quot;" newline="True"/>
+                <for variable="c" start="1" end="10" direction="inc" step="1">
+                    <output expression="n&amp;&quot;*&quot;&amp;c&amp;&quot;=&quot;&amp;n*c" newline="True"/>
+                    <comment text="the result multiplication table is shown here"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
