@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="guru"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 09:48:45 AM"/>
+        <attribute name="created" value="Z3VydTtUUFMxRS1MQVAtNDA7MjAyMi0xMi0wOTswOToxOTo1NiBBTTsyNTA0"/>
+        <attribute name="edited" value="Z3VydTtUUFMxRS1MQVAtNDA7MjAyMi0xMi0wOTswOTo0ODo0NSBBTTsxOzI2MTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="no" type="Integer" array="True" size="10"/>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;enter number &quot;&amp;i+1" newline="True"/>
+                <input variable="num"/>
+                <assign variable="no[i]" expression="num"/>
+            </for>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;number &quot;&amp;i+1&amp;&quot; is &quot;&amp;no[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

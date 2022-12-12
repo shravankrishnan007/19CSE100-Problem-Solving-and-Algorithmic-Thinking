@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="guru"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 11:22:53 AM"/>
+        <attribute name="created" value="Z3VydTtUUFMxRS1MQVAtNDA7MjAyMi0xMi0wOTswOTo0ODo1MCBBTTsyNTAw"/>
+        <attribute name="edited" value="Z3VydTtUUFMxRS1MQVAtNDA7MjAyMi0xMi0wOTsxMToyMjo1MyBBTTs2OzI2MDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="ROLL, MARKS1, MARKS2, MARKS3, MARKS4, MARKS5, TOTAL, AVERAGE" type="Integer" array="False" size=""/>
+            <declare name="students" type="Integer" array="False" size=""/>
+            <output expression="&quot;please enter the number of students:&quot;" newline="True"/>
+            <input variable="students"/>
+            <declare name="sum" type="Integer" array="True" size="students"/>
+            <declare name="Average1" type="Integer" array="True" size="students"/>
+            <declare name="allmarks" type="String" array="True" size="students"/>
+            <declare name="rollnumber" type="Integer" array="True" size="students"/>
+            <for variable="i" start="0" end="students-1" direction="inc" step="1">
+                <output expression="&quot;ROLL NO OF STUDENT &quot;&amp;i+1" newline="True"/>
+                <input variable="ROLL"/>
+                <output expression="&quot;ENTER MARKS SUBJECT 1:&quot;" newline="True"/>
+                <input variable="MARKS1"/>
+                <output expression="&quot;ENTER MARKS SUBJECT 2:&quot;" newline="True"/>
+                <input variable="MARKS2"/>
+                <output expression="&quot;ENTER MARKS SUBJECT 3:&quot;" newline="True"/>
+                <input variable="MARKS3"/>
+                <output expression="&quot;ENTER MARKS SUBJECT 4:&quot;" newline="True"/>
+                <input variable="MARKS4"/>
+                <output expression="&quot;ENTER MARKS SUBJECT 5:&quot;" newline="True"/>
+                <input variable="MARKS5"/>
+                <assign variable="TOTAL" expression="MARKS1+MARKS2+MARKS3+MARKS4+MARKS5"/>
+                <assign variable="AVERAGE" expression="TOTAL/5"/>
+                <assign variable="sum[i]" expression="MARKS1+MARKS2+MARKS3+MARKS4+MARKS5"/>
+                <assign variable="Average1[i]" expression="TOTAL/5"/>
+                <assign variable="allmarks[i]" expression="&quot; mark 1 is &quot;&amp;MARKS1&amp;&quot; mark 2 is &quot;&amp;MARKS2&amp;&quot; mark 3 is &quot;&amp;MARKS3&amp;&quot; mark 4 is &quot;&amp;MARKS4&amp;&quot; mark 5 is &quot;&amp;MARKS5"/>
+                <assign variable="rollnumber[i]" expression="ROLL"/>
+            </for>
+            <for variable="i" start="0" end="students-1" direction="inc" step="1">
+                <output expression="&quot;ROLL NUMBER:&quot;&amp;rollnumber[i]" newline="True"/>
+                <output expression="&quot;marks&quot;&amp;allmarks[i]" newline="True"/>
+                <output expression="&quot;TOTAL mark OF the  STUDENT is &quot;&amp;sum[i]" newline="True"/>
+                <output expression="&quot;AVERAGE OF STUDENT is &quot;&amp;Average1[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
