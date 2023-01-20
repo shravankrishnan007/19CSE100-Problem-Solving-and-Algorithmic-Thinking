@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22062"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-20 10:49:27 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA2MjsyMDIyMjNNQVlDMDA5OTsyMDIzLTAxLTIwOzEwOjI0OjM0IEFNOzMwNjA="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA2MjsyMDIyMjNNQVlDMDA5OTsyMDIzLTAxLTIwOzEwOjQ5OjI3IEFNOzQ7MzE4MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, j, idx, temp" type="Integer" array="False" size=""/>
+            <output expression="&quot;please enter the total number of datas to be computed:&quot;" newline="True"/>
+            <comment text="number of datas that has to be computed "/>
+            <input variable="n"/>
+            <declare name="A" type="Integer" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;enter data :&quot; &amp;i+1 &amp;&quot;.&quot;" newline="True"/>
+                <comment text="datas being stored in an array"/>
+                <input variable="A[i]"/>
+            </for>
+            <for variable="i" start="0" end="n-2" direction="inc" step="1">
+                <assign variable="idx" expression="i"/>
+                <breakpoint expression="" always="True"/>
+                <for variable="j" start="i+1" end="n-1" direction="inc" step="1">
+                    <if expression="A[idx]&gt;A[j]">
+                        <then>
+                            <assign variable="idx" expression="j"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <assign variable="temp" expression="A[idx]"/>
+                <assign variable="A[idx]" expression="A[i]"/>
+                <assign variable="A[i]" expression="temp"/>
+            </for>
+            <output expression="&quot;data in increasing order:&quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;data&quot; &amp; i+1 &amp; &quot; is &quot; &amp;A[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
